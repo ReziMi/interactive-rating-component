@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    font-family: "Overpass", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #131518;
+}
+
+.container{
+    width: 327px;
+    height: 360px;
+    border-radius: 15px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 32px;
+}
+
+.star{
+    width: 40px;
+    height: 40px;
+    background-color: #262E38;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.question{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    width: 279px;
+    margin-bottom: 10px;
+}
+
+.mainText{
+    color: #969FAD;
+    font-size: 14px;
+    line-height: 22px;
+    width: 279px;
+}
+
+.buttons{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonOne,
+.buttonTwo,
+.buttonThree,
+.buttonFour,
+.buttonFive{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background-color: #262E38;
+    color:#7C8798;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.175px;
+}
+
+.submit{
+    width: 279px;
+    height: 45px; 
+    border-radius: 22.5px;
+    background: #FC7614;
+
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.867px;
+    border: none;
+    margin-top: 24px;
+}
+
+
+.resultContainer{
+    width: 327px;
+    height: 360px;
+    border-radius: 15px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    display: none;
+    flex-direction: column;
+    padding: 34px 24px 37px;
+    align-items: center;
+}
+
+.thanks{
+    width: 144px;
+    height: 96px;
+    margin-bottom: 24px;
+}
+
+.selectedPoints{
+    width: 168px;
+    height: 32px;
+    border-radius: 22.5px;
+    background: #262E38;
+
+    color: #FC7614;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.bigThanks{
+    width: 279px;
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 10px;
+}
+
+.thanksText{
+    width: 279px;
+    color: #969FAD;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+
+@media (min-width: 1440px) {  
+    .container{
+        width: 412px;
+        height: 416px;
+        border-radius: 30px;
+        padding: 32px 39px;
+    }
+    
+    .star{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 30px;
+    }
+    
+    .question{
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+    
+    .mainText{
+        font-size: 15px;
+        line-height: 24px;
+        width: 340px;
+    }
+    
+    .buttonOne,
+    .buttonTwo,
+    .buttonThree,
+    .buttonFour,
+    .buttonFive{
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+        letter-spacing: 0.2px;
+    }
+
+    .buttonOne:active,
+    .buttonTwo:active,
+    .buttonThree:active,
+    .buttonFour:active,
+    .buttonFive:active,
+    .buttonOne:focus,
+    .buttonTwo:focus,
+    .buttonThree:focus,
+    .buttonFour:focus,
+    .buttonFive:focus {
+        background-color: #7C8798;
+        color: #FFF;
+    }    
+    
+
+    .buttonOne:hover,
+    .buttonTwo:hover,
+    .buttonThree:hover,
+    .buttonFour:hover,
+    .buttonFive:hover{
+        cursor: pointer;
+        background-color: #FC7614;
+        color: #FFF;
+    }
+
+    
+    .submit{
+        width: 341px;
+        height: 45px; 
+
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-top: 43px;
+    }
+
+    .submit:hover{
+        cursor: pointer;
+        background: #FFF;
+        color: #FC7614;
+    }
+    
+    
+    .resultContainer{
+        width: 412px;
+        height: 416px;
+        border-radius: 30px;
+    }
+    
+    .thanks{
+        width: 162px;
+        height: 108px;
+        margin-bottom: 32px;
+    }
+    
+    .selectedPoints{
+        width: 193px;
+        height: 32px;
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 36px;
+    }
+    
+    .bigThanks{
+        width: 340px;
+        font-size: 28px;
+        border-bottom: 7px;
+    }
+    
+    .thanksText{
+        width: 340px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
